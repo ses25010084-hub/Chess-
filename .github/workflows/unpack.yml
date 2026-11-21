@@ -25,6 +25,7 @@ jobs:
           mkdir /tmp/chess-project
           unzip -q "$ZIP" -d /tmp/chess-project
           cp -a /tmp/chess-project/ChessStudyOverlay/. .
+          rm -f .github/workflows/build-apk.yml
           rm "$ZIP"
 
       - name: Save extracted files
